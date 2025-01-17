@@ -7,8 +7,11 @@ class Enemy:
     def talk(self): 
         print(f"I am {self._name}, My health is {self.health}, I do Damage of {self.damage}")
         
-    def get_type(self):
+    def get_name(self):
         return self._name
+    
+    def set_name(self, name):
+        self.name = name
     
     def info(self):
         print(f"{self._name} has {self.health}HP and does damage of {self.damage}Pts")
